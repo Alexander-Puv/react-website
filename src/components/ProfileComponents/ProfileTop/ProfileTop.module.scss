@@ -1,0 +1,111 @@
+.userImg {
+    position: relative;
+    display: flex;
+    align-self: center;
+    width: 220px;
+    height: 220px;
+    
+    img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin: auto;
+    }
+
+    svg {
+        width: 200px;
+        margin: auto;
+        fill: white;
+    }
+
+    .changeImg {
+        position: absolute;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.75);
+        opacity: 0;
+        transition: var(--trans);
+        border-radius: 5px;
+        border: 2px dashed #fff;
+
+        input {
+            position: absolute;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+            cursor: pointer;
+        }
+
+        button {
+            position: absolute;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            cursor: pointer;
+
+            svg {
+                width: 75px;
+                margin: auto;
+            }
+        }
+    }
+
+    &:hover .changeImg {
+        opacity: 1;
+    }
+
+    .removeImg {
+        position: absolute;
+        right: 5px;
+        bottom: 5px;
+        width: 35px;
+        height: 35px;
+        padding: 5px;
+        cursor: pointer;
+        z-index: 11;
+
+        svg {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(var(--nd-color));
+            border-radius: 5px;
+            overflow: hidden;
+            transition: var(--trans);
+
+            span {
+                opacity: 0;
+                margin: auto;
+                transition: var(--trans);
+            }
+        }
+
+        &:hover {
+            svg {
+                opacity: 0;
+            }
+
+            div {
+                width: 350%;
+                height: 100%;
+
+                span {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

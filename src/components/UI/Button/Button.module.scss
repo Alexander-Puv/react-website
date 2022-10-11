@@ -1,0 +1,20 @@
+.button {
+    text-align: left;
+    background-color: rgb(var(--rd-color));
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: var(--trans);
+
+    &:hover {
+        color: rgb(var(--text-trans-color));
+        background-color: rgb(var(--th-color));
+    }
+
+    &:disabled {
+        color: rgb(var(--gray-color));
+        background-color: rgb(var(--th-color));
+        cursor: default;
+    }
+}

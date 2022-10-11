@@ -1,0 +1,50 @@
+.footer {
+    width: 100%;
+    margin-top: auto;
+    padding: 50px 20px;
+    text-align: center;
+
+    h1 {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        
+        a {
+            display: flex;
+            text-align: center;
+            font-size: 20px;
+            height: 32px;
+
+            svg {
+                height: 32px;
+                fill: white;
+                transition: var(--trans);
+            }
+
+            &:hover svg {
+                fill: rgb(var(--text-trans-color));
+            }
+
+            span {
+                font-size: 20px;
+            }
+        }
+    }
+
+    @media (max-width: 600px) {
+        h1 {
+            font-size: 34px;
+        }
+
+        div {
+            flex-direction: column;
+            word-break: break-all;
+        }
+    }
+}

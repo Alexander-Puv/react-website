@@ -1,0 +1,246 @@
+.header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    margin-bottom: 40px;
+    padding: 0 40px;
+    background-color: rgba(var(--nd-color), 0.75);
+    backdrop-filter: blur(10px);
+    box-shadow: #000 3px 0 3px;
+    z-index: 10;
+}
+
+.logo {
+    font-family: 'Montserrat', sans-serif;;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    width: 450px;
+    height: 40px;
+}
+
+.searchLine {
+    width: 400px;
+    & input {
+        width: 100%;
+        border-radius: 5px 0 0 5px;
+    }
+}
+
+.searchButton {
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 100%;
+    padding: 0 12.5px;
+    background-color: rgb(var(--th-color));
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    & svg {
+        align-self: center;
+        width: 100%;
+        fill: #fff;
+        transition: var(--trans);
+    }
+    &:hover svg {
+        fill: rgb(var(--text-trans-color));
+    }
+}
+
+.arrowButton {
+    display: none;
+    & svg {
+        pointer-events: none;
+        display: block;
+        width: 50px;
+        fill: rgb(var(--gray-color));
+        transition: var(--trans);
+    }
+    &:hover svg {
+        fill: #fff;
+    }
+}
+
+.open {
+    display: none;
+    & svg {
+        width: 50px;
+        fill: rgb(var(--gray-color));
+        cursor: pointer;
+        transition: var(--trans);
+        &:hover {
+            fill: #fff;
+        }
+    }
+}
+
+.logining span {
+    margin: 0 5px;
+    color: rgb(var(--th-color))
+}
+
+.log_in {
+    transition: .3s ease-out;
+    &:hover {
+        color: rgb(var(--text-trans-color));
+    }
+}
+
+.sign_up {
+    padding: 10px 15px;
+    background-color: rgb(var(--rd-color));
+    border-radius: 5px;
+    transition: .3s ease-out;
+    &:hover {
+        color: rgb(var(--text-trans-color));
+        background-color: rgb(var(--th-color));
+    }
+}
+
+.userProfile {
+    display: flex;
+    height: 40px;
+    gap: 15px;
+    align-items: center;
+
+    button:hover a {
+        color: rgb(var(--text-trans-color));
+    }
+
+    .profileLink {
+        width: 40px;
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+
+        svg {
+            width: 100%;
+            height: 100%;
+            fill: white;
+            transition: var(--trans);
+
+            &:hover {
+                fill: rgb(var(--text-trans-color));
+            }
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    .header {
+        padding: 0 20px;
+    }
+
+    .search {
+        width: 250px;
+    }
+
+    .searchLine {
+        width: 200px;
+    }
+}
+
+@media (max-width: 600px) {
+    .search {
+        display: none;
+    }
+
+    .open {
+        display: block;
+    }
+
+    .opened {
+        & .logo {
+            display: none;
+        }
+
+        & .search {
+            width: 100%;
+            display: flex;
+
+            & .arrowButton {
+                display: block;
+            }
+
+            & .searchLine {
+                width: calc(100% - 100px);
+            }
+        }
+
+        & .open {
+            display: none;
+        }
+
+        & .logining {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 380px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .logo {
+        margin: 10px 0;
+    }
+
+    .search {
+        display: flex;
+        width: 100%;
+    }
+
+    .searchLine {
+        width: 100%;
+    }
+
+    .searchButton {
+        width: 50px;
+    }
+
+    .open {
+        display: none;
+    }
+
+    .logining {
+        margin: 20px 0;
+    }
+
+    .userProfile {
+        margin: 10px 0;
+    }
+    
+    .opened {
+        & .logo {
+            display: block;
+        }
+
+        & .search {
+            & .arrowButton {
+                display: none;
+            }
+
+            & .searchLine {
+                width: 100%;
+            }
+        }
+
+        & .logining {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,186 @@
+.profileCenter {
+    align-self: center;
+    max-width: 700px;
+    width: 100%;
+
+    .ind {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            word-break: break-all;
+    
+            .div {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                min-height: 60px;
+                gap: 20px;
+                padding: 0 20px;
+                background-color: rgb(var(--nd-color));
+                border: 1px solid rgb(var(--gray-color));
+    
+                div {
+                    input {
+                        height: auto;
+                        padding: 10px 15px;
+                        background-color: rgb(var(--rd-color));
+                        font-size: 15px;
+                        line-height: 0;
+                        border: 0;
+                        border-radius: 5px;
+    
+                        &:disabled {
+                            background-color: rgb(var(--th-color));
+                            opacity: 1;
+                            color: white !important;
+                            cursor: auto;
+                        }
+    
+                        &::placeholder {
+                            color: rgb(var(--gray-color));
+                        }
+                    }
+    
+                    div {
+                        background-color: rgb(var(--nd-color));
+                        border: 0;
+                        border-radius: 5px;
+    
+                        * {
+                            color: white;
+                        }
+    
+                        [data-weekend] {
+                            color: rgb(var(--red-color));
+                        }
+    
+                        [data-outside],
+                        :disabled {
+                            color: rgb(var(--gray-color));
+                        }
+    
+                        button:hover {
+                            background-color: rgb(var(--rd-color));
+                            color: rgb(var(--text-trans-color));
+                        }
+
+                        &[class~=mantine-Input-rightSection] {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            
+            .mainDesc {
+                padding: 10px 20px;
+
+                span {
+                    width: 100px;
+                }
+
+                .description {
+                    height: 100%;
+                    width: 100%;
+                    padding: 10px;
+                    transition: var(--trans);
+                    border-radius: 5px;
+    
+                    &,
+                    * {
+                        border: none;
+                        background-color: transparent;
+                    }
+    
+                    [class~=mantine-RichTextEditor-toolbar] {
+                        display: none;
+                    }
+    
+                    [class~=ql-editor] {
+                        padding: 0;
+    
+                        &::before {
+                            color: rgb(var(--gray-color))
+                        }
+                    }
+                }
+                    
+                .data {
+                    cursor: auto;
+    
+                    .dataMain {
+                        position: fixed;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        max-width: 900px;
+                        width: 100%;
+                        z-index: 10;
+            
+                        div {
+                            background-color: rgb(var(--nd-color));
+                        }
+    
+                        [class~=mantine-RichTextEditor-toolbarInner] {
+                            justify-content: center;
+                        }
+                
+                        [class~=mantine-RichTextEditor-root] {
+                            border: none;
+                        }
+                
+                        button {
+                            background-color: rgb(var(--rd-color));
+                            border: 0;
+                        }
+                    }
+    
+                    .dataBack {
+                        position: fixed;
+                        top: 70px;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background-color: rgba(0, 0, 0, 0.5);
+                        cursor: pointer;
+                    }
+                }
+    
+                h1,
+                h1 * {
+                    font-size: 20px;
+                }
+            }
+        }
+        
+        /* .description {
+            height: 100%;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: rgb(var(--rd-color));
+            cursor: pointer;
+            transition: var(--trans);
+        } */
+    }
+
+    .data {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px;
+        gap: 20px;
+
+        .change {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+
+            &.decline button:first-child:hover {
+                color: red;
+            }
+        }
+    }
+}

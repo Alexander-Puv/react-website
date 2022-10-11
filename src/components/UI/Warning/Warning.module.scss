@@ -1,0 +1,23 @@
+.warning {
+    position: relative;
+
+    span {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateY(-110%);
+        width: 200px;
+        padding: 10px;
+        background-color: rgb(var(--th-color));
+        border: solid 1px red;
+        
+        &::after {
+            content: ''; 
+            position: absolute;
+            right: 20px;
+            bottom: -20px;
+            border: 10px solid transparent;
+            border-top: 10px solid red;
+        }
+    }
+}

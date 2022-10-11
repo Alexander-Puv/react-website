@@ -1,0 +1,47 @@
+.page_top {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    width: 100%;
+    .NW {
+        font-size: 24px;
+        font-weight: 100;
+        margin: 0 20px 20px;
+    }
+    .slider {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .left_arrow {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            font-size: 32px;
+            z-index: 10;
+            cursor: pointer;
+            user-select: none;
+        }
+        .right_arrow {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            font-size: 32px;
+            z-index: 10;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .slide {
+            opacity: 0;
+            scale: 0.7;
+            transition: var(--looong-trans);
+            &.active {
+                width: 100%;
+                opacity: 1;
+                scale: 1;
+            }
+        }
+    }
+}

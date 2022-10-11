@@ -1,0 +1,18 @@
+import img2 from "../assets/image2.jpg";
+import img3 from "../assets/image3.jpg";
+
+export const BDContent = () => {
+    return (
+        <>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sem turpis, consectetur ac blandit a, vehicula quis ex. Donec neque nibh, bibendum in blandit sed, facilisis eu lectus. In consequat dignissim dictum. Aenean id laoreet dolor. Suspendisse potenti. Sed pharetra in risus porta consequat. Fusce scelerisque lacinia augue, quis fermentum urna volutpat eu. Nam id scelerisque erat, id aliquam lectus. Etiam iaculis magna nec tellus congue bibendum. In hac habitasse platea dictumst. Aliquam ante mi, dignissim a ornare vel, euismod quis neque. Fusce eu aliquam elit, nec porta augue. Praesent quam ligula, tristique nec arcu elementum, tempus cursus nulla. Proin vulputate urna ligula, nec pulvinar neque ultrices ac. Pellentesque pharetra libero et nulla venenatis, eget gravida nulla euismod.</p>
+            <h2>Chapter name</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sem turpis, consectetur ac blandit a, vehicula quis ex. Donec neque nibh, bibendum in blandit sed, facilisis eu lectus. In consequat dignissim dictum. Aenean id laoreet dolor. Suspendisse potenti. Sed pharetra in risus porta consequat. Fusce scelerisque lacinia augue, quis fermentum urna volutpat eu. Nam id scelerisque erat, id aliquam lectus. Etiam iaculis magna nec tellus congue bibendum. In hac habitasse platea dictumst. Aliquam ante mi, dignissim a ornare vel, euismod quis neque. Fusce eu aliquam elit, nec porta augue. Praesent quam ligula, tristique nec arcu elementum, tempus cursus nulla. Proin vulputate urna ligula, nec pulvinar neque ultrices ac. Pellentesque pharetra libero et nulla venenatis, eget gravida nulla euismod.</p>
+            <h3>Paragraph name</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sem turpis, consectetur ac blandit a, vehicula quis ex. Donec neque nibh, bibendum in blandit sed, facilisis eu lectus. In consequat dignissim dictum. Aenean id laoreet dolor. Suspendisse potenti. Sed pharetra in risus porta consequat. Fusce scelerisque lacinia augue, quis fermentum urna volutpat eu. Nam id scelerisque erat, id aliquam lectus. Etiam iaculis magna nec tellus congue bibendum. In hac habitasse platea dictumst. Aliquam ante mi, dignissim a ornare vel, euismod quis neque. Fusce eu aliquam elit, nec porta augue. Praesent quam ligula, tristique nec arcu elementum, tempus cursus nulla. Proin vulputate urna ligula, nec pulvinar neque ultrices ac. Pellentesque pharetra libero et nulla venenatis, eget gravida nulla euismod.</p>
+            <img src={img2} alt='RandomImage' />
+            <h3>Paragraph name</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sem turpis, consectetur ac blandit a, vehicula quis ex. Donec neque nibh, bibendum in blandit sed, facilisis eu lectus. In consequat dignissim dictum. Aenean id laoreet dolor. Suspendisse potenti. Sed pharetra in risus porta consequat. Fusce scelerisque lacinia augue, quis fermentum urna volutpat eu. Nam id scelerisque erat, id aliquam lectus. Etiam iaculis magna nec tellus congue bibendum. In hac habitasse platea dictumst. Aliquam ante mi, dignissim a ornare vel, euismod quis neque. Fusce eu aliquam elit, nec porta augue. Praesent quam ligula, tristique nec arcu elementum, tempus cursus nulla. Proin vulputate urna ligula, nec pulvinar neque ultrices ac. Pellentesque pharetra libero et nulla venenatis, eget gravida nulla euismod.</p>
+            <img src={img3} alt='RandomImage' />
+        </>
+    )
+}

@@ -1,0 +1,22 @@
+.comments {
+    margin-top: 50px;
+
+    .addComment {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        background-color: rgb(var(--nd-color));
+        border-radius: 5px;
+        margin-bottom: 15px;
+
+        input {
+            border-radius: 5px;
+        }
+
+        .addButton {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 10px;
+        }
+    }
+}
