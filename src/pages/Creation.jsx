@@ -86,7 +86,7 @@ export const Creation = () => {
                     </div></h3>
                     <Input id={cl.title} type="text" placeholder={'Write a title'}/>
                     <div className={cl.additional}>
-                        <h3>{`${date.getDate()} of ${month}`}</h3>
+                        <h3>{`${date.getDate()} ${month}`}</h3>
                         <div>
                             <h3>There would be views</h3>
                             <h3>There would be raiting</h3>
@@ -109,7 +109,7 @@ export const Creation = () => {
                 ]}
             />
             <div className={cl.nope}>
-                <Button disabled>There should be a button "publish" but I'm not a fullstack developer</Button>
+                <Button disabled>There should be a button "publish" but, as you see, it is not working</Button>
             </div>
         </div>
     )
